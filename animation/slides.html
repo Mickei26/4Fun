@@ -1,0 +1,150 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <link rel="apple-touch-icon" type="image/png"
+        href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+    <link rel="mask-icon" type=""
+        href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg"
+        color="#111">
+
+
+    <title>CodePen - Slideshow, CSS only</title>
+
+
+
+
+    <style>
+        body {
+            font-family: Helvetica, sans-serif;
+            padding: 5%;
+            text-align: center;
+        }
+
+        #slideshow {
+            overflow: hidden;
+            height: 510px;
+            width: 728px;
+            margin: 0 auto;
+        }
+
+        .slide-wrapper {
+            width: 2912px;
+            -webkit-animation: slide 18s ease infinite;
+        }
+
+        .slide {
+            float: left;
+            height: 510px;
+            width: 728px;
+        }
+
+        .slide:nth-child(1) {
+            background: #D93B65;
+        }
+
+        .slide:nth-child(2) {
+            background: #037E8C;
+        }
+
+        .slide:nth-child(3) {
+            background: #36BF66;
+        }
+
+        .slide:nth-child(4) {
+            background: #D9D055;
+        }
+
+        .slide-number {
+            color: #000;
+            text-align: center;
+            font-size: 10em;
+        }
+
+        @-webkit-keyframes slide {
+            20% {
+                margin-left: 0px;
+            }
+
+            30% {
+                margin-left: -728px;
+            }
+
+            50% {
+                margin-left: -728px;
+            }
+
+            60% {
+                margin-left: -1456px;
+            }
+
+            70% {
+                margin-left: -1456px;
+            }
+
+            80% {
+                margin-left: -2184px;
+            }
+
+            90% {
+                margin-left: -2184px;
+            }
+        }
+    </style>
+
+    <script>
+        window.console = window.console || function (t) {};
+    </script>
+
+
+
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+    </script>
+
+
+</head>
+
+<body translate="no" data-new-gr-c-s-check-loaded="14.988.0" data-gr-ext-installed="">
+    <div id="slideshow">
+        <div class="slide-wrapper">
+            <div class="slide">
+                <h1 class="slide-number">1</h1>
+            </div>
+            <div class="slide">
+                <h1 class="slide-number">2</h1>
+            </div>
+            <div class="slide">
+                <h1 class="slide-number">3</h1>
+            </div>
+            <div class="slide">
+                <h1 class="slide-number">4</h1>
+            </div>
+            <div class="slide">
+                <h1 class="slide-number">5</h1>
+            </div>
+        </div>
+    </div>
+
+    <h1>Just a simple slideshow. CSS only, no JS</h1>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
